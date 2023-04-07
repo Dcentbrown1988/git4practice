@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Nuel;
+    Src: url("Poppins-Regular.ttf");
+}
+
+ *{
+    color: blue;
+    font-family: Nuel, sans-serif;
+}
+
+a:visited,  a:link{ 
+    color: blueviolet;
+}
+
+a:active, a:hover {
+    color:magenta
+}
+
+		/* Float an image */
+		img {
+			float: left;
+			margin-right: 20px;
+		}
+
+		/* Display content in columns using a grid */
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+		}
+
+		/* Apply graphic design with CSS */
+		body {
+			background-image: url('background.jpg');
+			background-size: cover;
+		}
+
+		.rounded {
+			border-radius: 10px;
+			padding: 10px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+			background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+		}
+
+		.transformed {
+			transform: rotate(10deg);
+		}
+
+		/* Mobile Web */
+		@media only screen and (max-width: 768px) {
+			/* Mobile-friendly design */
+			.grid-container {
+				grid-template-columns: repeat(1, 1fr);
+			}
+
+			/* Print-friendly version */
+			@media print {
+				img {
+					display: none;
+				}
+
+				.grid-container {
+					grid-template-columns: repeat(1, 1fr);
+					grid-gap: 10px;
+				}
+
+				.rounded {
+					border-radius: 0;
+					box-shadow: none;
+					background: none;
+					padding: 0;
+				}
+			}
+		}
+
+		/* Tables */
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #f2f2f2;
+		}
+
+		.colgroup1 {
+			background-color: #f2f2f2;
+			width: 30%;
+		}
+
+		.colgroup2 {
+			background-color: #e6e6e6;
+			width: 70%;
+		}
+
+		.rowspan {
+			background-color: #f2f2f2;
+		}
+
+		.colspan {
+			background-color: #e6e6e6;
+		}
+	
+
+	
+	
